@@ -25,15 +25,15 @@ def decide_mood(state) -> Literal["node_2", "node_3"]:
 # Nodes
 def node_1(state):
     print("---Node 1---")
-    return {"graph_state":state['graph_state'] +" I am"}
+    return {"graph_state":state['graph_state'] + " I am"}
 
 def node_2(state):
     print("---Node 2---")
-    return {"graph_state":state['graph_state'] +" happy!"}
+    return {"graph_state":state['graph_state'] + " happy!"}
 
 def node_3(state):
     print("---Node 3---")
-    return {"graph_state":state['graph_state'] +" sad!"}
+    return {"graph_state":state['graph_state'] + " sad!"}
 
 # Build graph
 builder = StateGraph(State)
